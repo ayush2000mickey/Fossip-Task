@@ -1,0 +1,22 @@
+.orderDetails {
+  margin: 1rem;
+}
+
+.orderDetailsHeader {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 0.2rem;
+}
+
+.orderDetailsHeaderLeft {
+  font-weight: 500;
+}
+
+.orderDetailsHeaderRight {
+  color: white;
+  background-color: red;
+  padding: 0.2rem 0.3rem;
+  border-radius: 10rem;
+  letter-spacing: 0.1rem;
+  font-weight: 500;
+}

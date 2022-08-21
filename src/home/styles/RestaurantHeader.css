@@ -1,0 +1,62 @@
+/* header */
+.headerTop {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  grid-gap: 1rem;
+}
+
+/* headerLogo */
+.headerLogo img {
+  width: 8rem;
+}
+
+/* headerInfo */
+.headerInfo {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.restaurantName {
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+
+.restaurantTiming {
+  color: gray;
+}
+
+.restaurantAddress {
+  color: gray;
+}
+
+/* headerButtons */
+.headerButtons {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.headerPhoneLogo img {
+  width: 2.2rem;
+  height: 2.2rem;
+  border: 2px solid rgb(64, 189, 15);
+  border-radius: 100%;
+}
+
+.headerMapLogo img {
+  background-color: black;
+  border-radius: 100%;
+  width: 2rem;
+  height: 2rem;
+  padding: 0.16rem;
+}
+
+/* headerBottom */
+.headerBottom {
+  text-align: center;
+  margin-top: 0.8rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+}
