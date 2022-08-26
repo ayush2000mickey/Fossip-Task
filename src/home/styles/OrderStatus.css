@@ -19,8 +19,10 @@
 
 .statusBar {
   display: grid;
-  grid-template-columns: repeat(9, 2.5rem);
+  grid-template-columns: repeat(9, 1.8rem);
+  grid-gap: 0.3rem;
   padding: 1rem;
+  margin: 0 2rem;
   text-align: center;
   align-items: center;
   font-size: 0.8rem;
@@ -60,7 +62,14 @@
 
 .line {
   height: 0.25rem;
-  width: 2.5rem;
+  width: 100%;
   background-color: gray;
-  margin: 0 4rem 1.2rem 0;
+  margin: 0 0 1.2rem 0;
+}
+
+@media only screen and (min-width: 600px) {
+  .statusBar {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+  }
 }

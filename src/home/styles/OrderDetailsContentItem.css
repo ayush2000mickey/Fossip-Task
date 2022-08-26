@@ -5,6 +5,7 @@
   padding-bottom: 1rem;
   grid-gap: 0.5rem;
   border-bottom: 0.12rem solid rgb(175, 173, 173);
+  transition: all 0.5sec ease-in-out;
 }
 
 .orderImage {
@@ -44,4 +45,19 @@
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+@media only screen and (min-width: 600px) {
+  .dishName {
+    font-size: 1.5rem;
+  }
+
+  .dishContents {
+    font-size: 1rem;
+  }
+
+  .orderItemQuantity,
+  .orderItemPrice {
+    font-size: 1.2rem;
+  }
 }
