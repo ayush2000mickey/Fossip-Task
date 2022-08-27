@@ -7,6 +7,25 @@
   text-align: center;
 }
 
+.orderInfoBox {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.orderIdBox {
+  padding: 0.3rem 0.8rem;
+  background: rgb(10, 155, 46);
+  border-radius: 10rem;
+  color: white;
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 0.2rem;
+  border: none;
+}
+
 .otpBox {
   padding: 0.3rem 0.8rem;
   background: orange;
@@ -15,6 +34,7 @@
   font-size: 1.2rem;
   font-weight: 600;
   letter-spacing: 0.2rem;
+  border: none;
 }
 
 .statusBar {
@@ -44,12 +64,11 @@
   border-radius: 100%;
 }
 
-.statusIcons > * {
-  padding: 0.5rem;
+.statusIcons {
   color: white;
   font-size: 1.4rem;
-  padding: 0.3rem;
   font-weight: 800;
+  margin: 0.3rem;
 }
 
 .accepted {
@@ -71,5 +90,15 @@
   .statusBar {
     display: grid;
     grid-template-columns: repeat(9, 1fr);
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .orderInfoBox {
+    flex-direction: column;
+  }
+
+  .orderIdBox {
+    margin-bottom: 1rem;
   }
 }

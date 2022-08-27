@@ -3,3 +3,16 @@
   margin: 1rem 0;
   padding: 1rem 0;
 }
+
+.needHelpBtn {
+  display: flex;
+  margin: 0.5rem auto;
+  color: white;
+  border: none;
+  background-color: red;
+  padding: 0.2rem 0.4rem;
+  border-radius: 10rem;
+  letter-spacing: 0.1rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}

@@ -1,13 +1,15 @@
 import React from "react";
 import OrderDetailsContentItem from "./OrderDetailsContentItem";
-import OrderItems from "../repository/OrderItems";
+import UserOrderDetails from "../repository/UserOrderDetails";
 
 import "../styles/OrderDetailsContent.css";
 
 const OrderDetailsContent = () => {
   let subTotal = 0;
 
-  OrderItems.forEach((item) => (subTotal += item.dishPrice));
+  UserOrderDetails.orderedItems.forEach(
+    (item) => (subTotal += item.dishPrice * item.dishQuantity)
+  );
 
   subTotal = subTotal.toFixed(1);
 
@@ -16,7 +18,7 @@ const OrderDetailsContent = () => {
   return (
     <div className="orderDetailsContent">
       <div>
-        {OrderItems.map((item) => {
+        {UserOrderDetails.orderedItems.map((item) => {
           return <OrderDetailsContentItem key={item.id} item={item} />;
         })}
       </div>

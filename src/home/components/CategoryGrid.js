@@ -9,6 +9,7 @@ const CategoryGrid = () => {
     <div className="categoryGrid">
       <OrderStatus />
       <OrderDetails />
+      <button className="needHelpBtn">Need Help ?</button>
     </div>
   );
 };

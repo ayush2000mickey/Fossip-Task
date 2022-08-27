@@ -7,7 +7,6 @@ const OrderDetails = () => {
     <div className="orderDetails">
       <div className="orderDetailsHeader">
         <div className="orderDetailsHeaderLeft">Your Order Details:</div>
-        <div className="orderDetailsHeaderRight">Need Help?</div>
       </div>
       <OrderDetailsContent />
     </div>

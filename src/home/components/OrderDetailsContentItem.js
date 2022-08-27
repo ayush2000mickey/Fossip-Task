@@ -3,6 +3,8 @@ import React from "react";
 import "../styles/OrderDetailsContentItem.css";
 
 const OrderDetailsContentItem = ({ item }) => {
+  const dishAmount = item.dishPrice * item.dishQuantity;
+
   return (
     <div className="orderItem">
       <div className="orderImage">
@@ -13,9 +15,11 @@ const OrderDetailsContentItem = ({ item }) => {
           <div className="dishName">{item.dishName}</div>
           <div className="dishContents">{item.dishContents}</div>
         </div>
-        <div className="orderItemQuantity">Quantity = {item.dishQuantity}</div>
+        <div className="orderItemQuantity">
+          {item.dishQuantity} x ₹{item.dishPrice}
+        </div>
       </div>
-      <div className="orderItemPrice">₹{item.dishPrice}</div>
+      <div className="orderItemPrice">₹{dishAmount}</div>
     </div>
   );
 };
